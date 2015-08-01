@@ -1,0 +1,273 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+     margin:0px;
+     background-color: black;
+}
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+
+
+
+/*=========================
+  Navigation
+ ================= */
+
+
+.navicon {
+     display:inline-block;
+     width: 100%;
+     margin-top: 3%;
+     -webkit-filter: invert(1);
+     filter: invert(1);
+}
+
+
+.navicon img.info{
+     height:70px;
+     float: left;
+     margin-left: 5%;
+
+}
+
+.navicon img.social{
+     height:55px;
+     float:right;
+     margin-right: 5%;
+}
+
+
+/* Right Sidebar Info*/
+
+.info-sidebar{
+     float:left;
+     width: 25%;
+     color:white;
+     margin-top: 2%;
+     margin-left: 40%;
+     background-color: black;
+     display:none;
+     text-align: center;
+     font:1em;
+}
+
+.info-sidebar h1{
+     font-size: 3em;
+}
+
+.info-sidebar h2{
+     font-size: 1em;
+}
+
+.info-sidebar h3{
+     font-size: 3em;
+}
+
+.info-sidebar p{
+     font-size: 1em;
+}
+
+
+.info-sidebar img{
+     width: 100%;
+     height:100%;
+     border-radius: 50%;
+     
+}
+
+
+/* Left Sidebar social icons*/
+
+ul.social-network {
+     list-style: none;  
+     margin-top: 1%;
+     margin-left:0 !important;
+     margin-right: 4%;
+     padding: 0;
+     float:right;
+     display:none;
+
+}
+
+ul.social-network li {
+     display: block;
+     margin: 0 5px;
+
+}
+
+
+/* footer social icons */
+.social-network a.icoRss:hover {
+     background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+     background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+     background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+     background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+     background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+     background-color:#007bb7;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+     color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+     color:#44BCDD;
+}
+
+.social-circle li a {
+     display:inline-block;
+     position:relative;
+     margin:0 auto 0 auto;
+     -moz-border-radius:50%;
+     -webkit-border-radius:50%;
+     border-radius:50%;
+     text-align:center;
+     width: 50px;
+     height: 50px;
+     font-size:20px;
+     margin-bottom: 10px;
+    
+}
+.social-circle li i {
+     margin:0;
+     line-height:50px;
+     text-align: center;
+
+}
+
+.social-circle img{
+     width:35px;
+     height:45px;
+}
+
+.social-nav img{
+     width:35px;
+     height:45px;
+}
+
+
+.social-circle li a:hover, .triggeredHover {
+     -moz-transform: rotate(360deg);
+     -webkit-transform: rotate(360deg);
+     -ms--transform: rotate(360deg);
+     transform: rotate(360deg);
+     -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+     -o-transition: all 0.2s;
+     -ms-transition: all 0.2s;
+     transition: all 0.2s;
+     opacity:100%;
+}
+.social-circle i {
+     color: #fff;
+     -webkit-transition: all 0.8s;
+     -moz-transition: all 0.8s;
+     -o-transition: all 0.8s;
+     -ms-transition: all 0.8s;
+     transition: all 0.8s;
+}
+
+a {
+ background-color: gray;
+    
+}
+
+/* Left Sidebar social icons END*/
+
+
+
+/* Video Nav */
+
+.vidcontrol {
+     display:inline-block;
+     margin-top: 40%;
+     margin-bottom: 10%;
+     padding-bottom: 5%;
+     width: 100%;
+     -webkit-filter: invert(1);
+     filter: invert(1);
+} 
+
+.vidcontrol img.Next{
+     height:70px;
+     float: left;
+     margin-left: 5%;
+     -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: fliph; /*IE*/
+    filter: fliph;
+
+
+}
+
+.vidcontrol img.Previous{
+     height:70px;
+     float:right;
+     margin-right: 5%;
+
+
+}
+
